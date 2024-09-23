@@ -13,9 +13,9 @@ int main()
     int row;
     cout << "enter the number of rows you would like your triangle to have:" << endl;
     cin >> row;
-    for (int x=0; x<row+1; x++)
+    for (int x=0; x<=row; x++)
     {
-        for (int y=0; y<x; ++y)
+        for (int y=0; y<x; y++)
         {
             cout <<"*";
         }
