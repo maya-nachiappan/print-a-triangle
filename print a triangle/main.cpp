@@ -7,20 +7,19 @@
 // program to take user input for number of rows and print a triangle with *
 
 #include <iostream>
-using namespace std;
 int main()
 {
     int row;
-    cout << "enter the number of rows you would like your triangle to have:" << endl;
-    cin >> row; // variable to store number of rows
+    std::cout << "enter the number of rows you would like your triangle to have:" << std::endl;
+    std::cin >> row; // variable to store number of rows
     
     for (int x=0; x<=row; x++) // creates outer rows
     {
         for (int y=0; y<x; y++) // prints stars in increasing order of rows
         {
-            cout <<"*";
+            std::cout <<"*";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
     return 0;
 }
